@@ -168,7 +168,7 @@ jobs:
 
     - name: Cache Compile
       id: cache-compile
-      uses: actions/cache/save@v4
+      uses: actions/cache/save@v5
       if: steps.compile.outputs.status == 'success' && !cancelled()
       with:
         path: openwrt
